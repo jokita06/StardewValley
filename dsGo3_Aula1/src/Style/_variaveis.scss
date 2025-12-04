@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+$fundo: #04010f;
+$claro: #f0ebeb;
+$card:#dcdff2;
+$sombrasBox: 0 4px 10px rgba(0, 0, 0, 0.3);
+$destaque-rosa: #ff3d7f transparent;
+$gradiente-rosa: linear-gradient(135deg, #2f1048, #e4018d);
+$foco: #4c0f32;
+$botao-azul: #0b8611;
+$botao-amarelo: linear-gradient(135deg, #b9820b, #ede203);
+$box-fundo: rgba(0, 0, 0, 0.8);
+$borda: 1px solid $fundo;
+$corDeFundo: #f4d588;
+$Borda: #6e280e;
+$CorParagrafo: #9f6522;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Press Start 2P';
+}
+
+
+button[disabled],
+.btn-disabled { 
+
+}
+
+
+.btn-stardew {
+  font-size: 12px;
+  padding: 12px 30px;
+  text-align: center;
+  text-transform: none;
+  background: #f7c648; 
+  color: #4a3000;
+  border: 3px solid #6e280e;     
+  box-shadow:
+    inset 0 -4px 0 #be8a1a,      
+    inset 0 4px 0 #fff3a3;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  border-radius: 10px;
+}
+
+.btn-stardew:hover {
+  background: #ffdb6e;
+  box-shadow:
+    inset 0 -4px 0 #ce941e,
+    inset 0 4px 0 #fff7bc;
+  transform: scale(1.05);
+}
