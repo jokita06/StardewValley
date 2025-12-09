@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+$fundo: #04010f;
+$sombrasBox: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+$box-fundo: rgba(0, 0, 0, 0.8);
+$borda: 1px solid $fundo;
+$corDeFundo: #f4d588;
+$corPrincipalBtn: #f7c648;
+$Borda: #6e280e;
+$CorParagrafo: #9f6522;
+$botaoDesabilitado: rgba(0, 0, 0, 0.364);
+$titulo: #3d1607;
+$preto: #000000;
+
+$corSecundariaBtn: #fff3a3;
+$corTerciariaBtn: #be8a1a;
+
+$corSecundariaBtnHover: #fff3a3;
+$corTerciariaBtnHover: #be8a1a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.btn-stardew {
+  font-size: 15px;
+  padding: 12px 30px;
+  text-align: center;
+  text-transform: none;
+  background: $corPrincipalBtn; 
+  font-weight: bold;
+  color: $titulo;
+  border: 3px solid $Borda;     
+  box-shadow:
+    inset 0 -4px 0 $corTerciariaBtn,      
+    inset 0 4px 0 $corSecundariaBtn;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  border-radius: 10px;
+}
+
+.btn-stardew:hover {
+  background: #ffdb6e;
+  box-shadow:
+    inset 0 -4px 0 $corTerciariaBtnHover,
+    inset 0 4px 0 $corSecundariaBtnHover;
+  transform: scale(1.05);
+}
+
+button[disabled],
+.btn-disabled { 
+  background: $botaoDesabilitado ; 
+  cursor: not-allowed;
+}

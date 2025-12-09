@@ -1,0 +1,16 @@
+@use './variaveis' as *;
+.inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  background-image: url('../assets/bgInitial.jpg');
+  background-repeat: no-repeat;
+  background-size: 1920px;
+
+  .logo {
+    height: 60%;
+  }
+}

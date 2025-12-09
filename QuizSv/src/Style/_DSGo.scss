@@ -1,0 +1,23 @@
+.corpo {
+  background-image: url('../assets/Bg_stardewValley.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #0000002a;
+    backdrop-filter: blur(2.5px); 
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}

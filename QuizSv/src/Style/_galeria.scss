@@ -1,0 +1,68 @@
+@use './variaveis' as *;
+
+.painel-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #5b3a1a;
+}
+
+.preview video,
+.preview img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  border: 4px solid #a86e2d;
+  background-color: #000;
+}
+
+.galeria-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.camera-panel {
+  background: $corDeFundo;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  border: 4px solid $Borda;
+  width: 700px;
+  text-align: center;
+}
+
+.painel-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #5b3a1a;
+}
+
+.gallery-panel {
+  background: $corDeFundo;
+  padding: 30px;
+  border-radius: 25px;
+  border: 4px solid $Borda;
+  width: 750px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.galeria-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.painel-horizontal {
+  display: flex;
+  width: 95%;
+  max-width: 1500px;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.gallery-side {
+  width: 650px;
+}
